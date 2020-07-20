@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Levels/Story_Levels/Level_Story.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Intro_Castle.jpg" type="Texture" id=2]
+
+[node name="Level_Story" instance=ExtResource( 1 )]
+
+[node name="BackgroundPicture" parent="CanvasLayer" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Level_Text" parent="CanvasLayer2" index="0"]
+text = "You live in Scotland in the year 1922. You are a bit of legend as one of Scotland's 6 known psychics.
+Exactly one year ago, a servant was murdered at Cross Manor. With the Scotland Yard having exhausted its resources, you have been hired to speak with the ghost of the servant from beyond the grave to try to find the murderer.
+Tonight is Halloween night and you will attempt to contact the dead ghost through a seance at the castle. They will give you limited clues and visions. Before the night ends, you must determine the murderer, the room in which he or she killed the servant, and the weapon they used. If you succeed, the restless ghost will find peace. If you fail, the ghost will roam the castle halls forever in agony.
+	"

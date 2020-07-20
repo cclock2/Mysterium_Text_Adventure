@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://Assets/Fonts/Achafont.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = SubResource( 2 )
+
+[node name="Continue Button" type="Button"]
+margin_right = 200.0
+margin_bottom = 20.0
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
+text = "Continue"
+__meta__ = {
+"_edit_use_anchors_": false
+}
