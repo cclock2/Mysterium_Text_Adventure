@@ -21,6 +21,11 @@ func _ready():
 func _getInvestigationText(index):
 	return $Card_Type_Information.traits[index]
 
+# Get The name of a Suspect/Room/Weapon
+func _getCardName(index):
+	var card = get_node("Card_" + str(index))
+	return card.card_name
+
 func _setText():
 	pass
 	$CanvasLayer2/Level_Text.text = "You have " + str(remainingInvestigations) + " remaining investigation"
@@ -46,6 +51,15 @@ func _investigateTrait(index):
 	else: 
 		$CanvasLayer2/Investigation_Result_2.text = print_text
 		final_investigate_text += ". Please guess a " + $Card_Type_Information.card_type
+		for n in range(numButtons):
+			var button_node = get_node("CanvasLayer2/Investigate_Button_" + str(n))
+			if (button_node != null):
+				button_node.final_guess_mode = true;
+				button_node._set_enabled()
+				button_node._set_text_final_guess()
+			else:
+				print_debug("Tried to enable more buttons than numButtons")
+				print_stack()
 	remainingInvestigations = remainingInvestigations-1
 	_setText()
 	$CanvasLayer2/Level_Text.text += final_investigate_text

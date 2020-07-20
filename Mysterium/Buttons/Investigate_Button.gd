@@ -20,6 +20,10 @@ func _ready():
 func _set_text_initial():
 	text = gameplay_node._getInvestigationText(button_ID)
 
+#Button Text during Final Guess phase
+func _set_text_final_guess():
+	text = gameplay_node._getCardName(button_ID)
+
 #Make button unclickable
 func _set_disabled():
   disabled = true
@@ -38,8 +42,8 @@ func _set_enabled():
 func _on_Button_pressed():
 	#_set_disabled()
 	if (!final_guess_mode):
-		gameplay_node._investigateTrait(button_ID)
 		_set_disabled()
+		gameplay_node._investigateTrait(button_ID)
 	elif (button_ID == GlobalVariables.murderer_card_indexes[GlobalVariables.current_stage]):
 		#Move To Next Scene
 		_set_disabled()
