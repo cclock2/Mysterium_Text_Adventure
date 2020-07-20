@@ -46,7 +46,7 @@ func _on_Button_pressed():
 		gameplay_node._investigateTrait(button_ID)
 	elif (button_ID == GlobalVariables.murderer_card_indexes[GlobalVariables.current_stage]):
 		#Move To Next Scene
-		_set_disabled()
+		print_debug("Correct!")
 	else:
 		#Move To Game 
-		_set_disabled()
+		print_debug("Game Over")
