@@ -1,21 +1,14 @@
-extends Node
+extends Node2D
 
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var murderer_card_indexes = [4,0,0]
-var current_stage = 0
 
-
-#node paths
-var level_gameplay_path = "/root/Level_Gameplay"
-
-#scene path
-var suspects_path = "res://Levels/Gameplay_Levels/Suspects.tscn"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$CanvasLayer2/Continue_Button.next_scene = GlobalVariables.suspects_path
 	pass # Replace with function body.
 
 

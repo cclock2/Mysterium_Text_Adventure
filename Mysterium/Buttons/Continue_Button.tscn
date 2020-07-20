@@ -17,7 +17,7 @@ font_path = "res://Assets/Fonts/Achafont.ttf"
 size = 40
 font_data = SubResource( 2 )
 
-[node name="Continue Button" type="Button"]
+[node name="Continue_Button" type="Button"]
 margin_right = 200.0
 margin_bottom = 20.0
 custom_styles/pressed = SubResource( 5 )

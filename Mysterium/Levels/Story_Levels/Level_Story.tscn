@@ -11,7 +11,7 @@ margin_top = -2.0
 margin_right = 1919.0
 margin_bottom = 718.0
 
-[node name="Continue Button" parent="CanvasLayer2" index="1" instance=ExtResource( 2 )]
+[node name="Continue_Button" parent="CanvasLayer2" index="1" instance=ExtResource( 2 )]
 margin_left = 1700.0
 margin_top = 660.0
 margin_right = 1900.0
