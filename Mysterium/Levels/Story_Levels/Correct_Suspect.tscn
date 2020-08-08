@@ -2,15 +2,33 @@
 
 [ext_resource path="res://Levels/Story_Levels/Level_Story.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Supect_To_Room_Resize.jpg" type="Texture" id=2]
-[ext_resource path="res://Levels/Story_Levels/CanvasLayer.gd" type="Script" id=3]
 [ext_resource path="res://Levels/Story_Levels/Correct_Suspect.gd" type="Script" id=4]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends CanvasLayer
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
 
 [node name="Level_Story" instance=ExtResource( 1 )]
 scale = Vector2( 0.997341, 1.02105 )
 script = ExtResource( 4 )
 
 [node name="CanvasLayer" parent="." index="0"]
-script = ExtResource( 3 )
+script = SubResource( 1 )
 
 [node name="BackgroundPicture" parent="CanvasLayer" index="0"]
 texture = ExtResource( 2 )
