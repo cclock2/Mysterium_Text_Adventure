@@ -12,7 +12,7 @@ texture = ExtResource( 2 )
 
 [node name="Level_Text" parent="CanvasLayer2" index="0"]
 rect_scale = Vector2( 1.00235, 0.978372 )
-text = "Using all of your psychic training, deductive reaosning, and lucky interpretation, you are able to unravel the ghost's final message just before dawn! After learning the murderer, room, and weapon you submit the culprit to the proper authorities.
+text = "Using all of your psychic training, deductive reasoning, and lucky interpretation, you are able to unravel the ghost's final message just before dawn! After learning the murderer, room, and weapon you submit the culprit to the proper authorities.
 You feel a warm sensation pass through as you leave the manor, knowing it is thanks from the ghost who can finally pass on to the spirit world now that you have solved their murder.
 
 Walking through the gardens with the warm sunshine on your back, you let yourself feel accomplished for the afternoon. But you have a feeling it's only a matter of time before you will be called back to the manor to solve another crime...
