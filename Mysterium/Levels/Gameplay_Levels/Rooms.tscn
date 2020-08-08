@@ -16,7 +16,7 @@ card_name = "Chapel"
 [node name="Card_1" parent="." index="3"]
 scale = Vector2( 1.00038, 1.11069 )
 traitsArray = [ "Indoor", "No", "Expensive", "Yes", "Murder", "Yes" ]
-card_name = "Grrenhouse"
+card_name = "Greenhouse"
 
 [node name="Card_2" parent="." index="4"]
 scale = Vector2( 0.997791, 0.99567 )
