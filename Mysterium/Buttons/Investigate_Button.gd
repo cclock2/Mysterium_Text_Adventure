@@ -48,5 +48,9 @@ func _on_Button_pressed():
 		#Move To Next Scene
 		print_debug("Correct!")
 	else:
-		#Move To Game 
-		print_debug("Game Over")
+		#Move To Game Over 
+		var err = get_tree().change_scene(GlobalVariables.game_over_path)
+		if (err == OK):
+			print_debug("Game Over")
+		else:
+			print_debug("Game_Over Scene failed to load")

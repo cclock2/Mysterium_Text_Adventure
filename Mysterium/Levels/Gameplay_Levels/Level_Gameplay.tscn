@@ -6,12 +6,12 @@
 [ext_resource path="res://Card_Traits/Card_Base.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Card_Traits/Card_Vocabulary.tscn" type="PackedScene" id=6]
 
-[sub_resource type="DynamicFontData" id=2]
+[sub_resource type="DynamicFontData" id=1]
 font_path = "res://Assets/Fonts/AlbertText-Bold.ttf"
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 size = 50
-font_data = SubResource( 2 )
+font_data = SubResource( 1 )
 
 [node name="Level_Gameplay" instance=ExtResource( 1 )]
 script = ExtResource( 4 )
@@ -24,7 +24,7 @@ margin_bottom = 800.0
 margin_top = 810.0
 margin_right = 1920.0
 margin_bottom = 880.0
-custom_fonts/normal_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -33,7 +33,7 @@ __meta__ = {
 margin_top = 890.0
 margin_right = 1920.0
 margin_bottom = 960.0
-custom_fonts/normal_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
