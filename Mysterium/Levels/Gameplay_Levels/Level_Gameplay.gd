@@ -4,6 +4,7 @@ extends Node2D
 # var a = 2
 # var b = "tex#
 export var remainingInvestigations = 2
+export var success_path_index = 0
 var numButtons = 6
 var current_card
 
@@ -68,4 +69,4 @@ func _investigateTrait(index):
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
-#	pas
+#	4pas

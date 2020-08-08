@@ -7,12 +7,15 @@ extends Button
 
 export var button_ID = 0
 var final_guess_mode = false
+var success_path = ""
 var gameplay_node
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 	gameplay_node = get_node(GlobalVariables.level_gameplay_path)
+	success_path = GlobalVariables.success_path_array[gameplay_node.success_path_index]
 	
 	
 
@@ -46,7 +49,11 @@ func _on_Button_pressed():
 		gameplay_node._investigateTrait(button_ID)
 	elif (button_ID == GlobalVariables.murderer_card_indexes[GlobalVariables.current_stage]):
 		#Move To Next Scene
-		print_debug("Correct!")
+		var err = get_tree().change_scene(success_path)
+		if (err == OK):
+			print_debug("Correct!")
+		else:
+			print_debug("Correct Scene failed to load")
 	else:
 		#Move To Game Over 
 		var err = get_tree().change_scene(GlobalVariables.game_over_path)

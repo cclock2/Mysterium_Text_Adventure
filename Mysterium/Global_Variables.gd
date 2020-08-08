@@ -13,9 +13,11 @@ var level_gameplay_path = "/root/Level_Gameplay"
 
 #scene path
 var suspects_path = 	"res://Levels/Gameplay_Levels/Suspects.tscn"
+var rooms_path = 		"res://Levels/Gameplay_Levels/Rooms.tscn"
 var introduction_path = "res://Levels/Story_Levels/Introduction.tscn"
 var game_over_path = 	"res://Levels/Story_Levels/Game_Over.tscn"
 
+var success_path_array = ["res://Levels/Story_Levels/Correct_Suspect.tscn","",""]
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
