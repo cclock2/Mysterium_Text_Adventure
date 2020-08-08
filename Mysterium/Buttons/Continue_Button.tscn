@@ -11,10 +11,10 @@
 [sub_resource type="StyleBoxEmpty" id=4]
 
 [sub_resource type="DynamicFontData" id=5]
-font_path = "res://Assets/Fonts/Achafont.ttf"
+font_path = "res://Assets/Fonts/AlbertText-Bold.ttf"
 
 [sub_resource type="DynamicFont" id=6]
-size = 40
+size = 25
 font_data = SubResource( 5 )
 
 [node name="Continue_Button" type="Button"]
