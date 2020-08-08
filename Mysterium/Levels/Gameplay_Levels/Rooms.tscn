@@ -4,6 +4,7 @@
 [ext_resource path="res://Assets/Rooms_Resize.jpg" type="Texture" id=2]
 
 [node name="Level_Gameplay" instance=ExtResource( 1 )]
+success_path_index = 1
 
 [node name="BackgroundPicture" parent="CanvasLayer" index="0"]
 texture = ExtResource( 2 )
