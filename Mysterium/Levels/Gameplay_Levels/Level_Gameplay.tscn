@@ -21,6 +21,7 @@ margin_top = 730.0
 margin_bottom = 800.0
 
 [node name="Investigation_Result_1" type="RichTextLabel" parent="CanvasLayer2" index="1"]
+margin_left = 10.0
 margin_top = 810.0
 margin_right = 1920.0
 margin_bottom = 880.0
@@ -30,6 +31,7 @@ __meta__ = {
 }
 
 [node name="Investigation_Result_2" type="RichTextLabel" parent="CanvasLayer2" index="2"]
+margin_left = 10.0
 margin_top = 890.0
 margin_right = 1920.0
 margin_bottom = 960.0
@@ -39,26 +41,29 @@ __meta__ = {
 }
 
 [node name="Investigate_Button_0" parent="CanvasLayer2" index="3" instance=ExtResource( 3 )]
+margin_left = 10.0
+margin_right = 210.0
 
 [node name="Investigate_Button_1" parent="CanvasLayer2" index="4" instance=ExtResource( 3 )]
-margin_left = 220.0
-margin_right = 420.0
+margin_left = 230.0
+margin_right = 430.0
+rect_scale = Vector2( 1, 0.985324 )
 
 [node name="Investigate_Button_2" parent="CanvasLayer2" index="5" instance=ExtResource( 3 )]
-margin_left = 440.0
-margin_right = 640.0
+margin_left = 450.0
+margin_right = 650.0
 
 [node name="Investigate_Button_3" parent="CanvasLayer2" index="6" instance=ExtResource( 3 )]
-margin_left = 660.0
-margin_right = 860.0
+margin_left = 670.0
+margin_right = 870.0
 
 [node name="Investigate_Button_4" parent="CanvasLayer2" index="7" instance=ExtResource( 3 )]
-margin_left = 880.0
-margin_right = 1080.0
+margin_left = 890.0
+margin_right = 1090.0
 
 [node name="Investigate_Button_5" parent="CanvasLayer2" index="8" instance=ExtResource( 3 )]
-margin_left = 1100.0
-margin_right = 1300.0
+margin_left = 1110.0
+margin_right = 1310.0
 
 [node name="Card_0" parent="." index="2" instance=ExtResource( 5 )]
 

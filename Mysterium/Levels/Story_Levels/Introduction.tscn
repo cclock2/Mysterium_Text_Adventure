@@ -11,7 +11,6 @@ script = ExtResource( 3 )
 texture = ExtResource( 2 )
 
 [node name="Level_Text" parent="CanvasLayer2" index="0"]
-margin_left = 0.0
 rect_scale = Vector2( 1, 1 )
 text = "You live in Scotland in the year 1922. You are a bit of legend as one of Scotland's 6 known psychics.
 Exactly one year ago, a servant was murdered at Cross Manor. With the Scotland Yard having exhausted its resources, you have been hired to speak with the ghost of the servant from beyond the grave to try to find the murderer.
