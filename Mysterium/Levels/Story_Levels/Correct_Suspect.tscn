@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Levels/Story_Levels/Level_Story.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Supect_To_Room_Resize.jpg" type="Texture" id=2]
+
+[node name="Level_Story" instance=ExtResource( 1 )]
+scale = Vector2( 0.997341, 1.02105 )
+
+[node name="BackgroundPicture" parent="CanvasLayer" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Level_Text" parent="CanvasLayer2" index="0"]
+rect_scale = Vector2( 0.997131, 0.924989 )
+text = "Despite the vague and barely coherent nature of the ghost's vision, you manage to correctly deduce the murderer's identity.
+However, that is not enough proof to convince the Scotland Yard to interrogate the culprit. You must supply more evidence: the room where the crime occurred and the murderer's weapon."

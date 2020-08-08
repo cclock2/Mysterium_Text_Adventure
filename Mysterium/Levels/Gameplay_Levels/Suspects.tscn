@@ -8,6 +8,9 @@
 [node name="BackgroundPicture" parent="CanvasLayer" index="0"]
 texture = ExtResource( 2 )
 
+[node name="Level_Text" parent="CanvasLayer2" index="0"]
+rect_scale = Vector2( 1, 1 )
+
 [node name="Investigation_Result_1" parent="CanvasLayer2" index="1"]
 text = "Have You Tested"
 

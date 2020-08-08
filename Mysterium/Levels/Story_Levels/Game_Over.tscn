@@ -11,6 +11,7 @@ script = ExtResource( 3 )
 texture = ExtResource( 2 )
 
 [node name="Level_Text" parent="CanvasLayer2" index="0"]
+margin_left = 0.0
 rect_scale = Vector2( 1, 1.01156 )
 text = "You have misinterpreted the ghost's vision and now it is doomed to float throughout the halls of the manor forever in torment and confusion.
 For the rest of eternity, the ghost will question whether it was not clear enough or if the psychic it trusted was actually a charlatan.

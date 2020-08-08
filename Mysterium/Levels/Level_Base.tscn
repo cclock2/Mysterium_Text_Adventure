@@ -34,6 +34,7 @@ layer = 2
 margin_top = 741.0
 margin_right = 1920.0
 margin_bottom = 1080.0
+rect_scale = Vector2( 1, 1.02064 )
 custom_fonts/normal_font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
