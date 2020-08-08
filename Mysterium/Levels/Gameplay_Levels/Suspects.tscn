@@ -28,7 +28,7 @@ card_name = "The Groundskeeper"
 
 [node name="Card_2" parent="." index="4"]
 traitsArray = [ "Female", "Young", "Wealthy", "Indoor", "Blonde", "Murderous" ]
-card_name = "The Lady of the House"
+card_name = "The Princess"
 
 [node name="Card_3" parent="." index="5"]
 traitsArray = [ "Male", "Middle-Aged", "Working Class", "Both", "Brown", "Murderous" ]
