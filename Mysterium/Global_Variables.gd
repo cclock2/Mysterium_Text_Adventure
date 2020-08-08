@@ -6,7 +6,7 @@ extends Node
 # var b = "text"
 var murderer_card_indexes = [4,2,0]
 var current_stage = 0
-
+var rng = RandomNumberGenerator.new()
 
 #node paths
 var level_gameplay_path = "/root/Level_Gameplay"
@@ -28,3 +28,8 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+func _randomize_murder():
+	rng.randomize()
+	for i in range(3):
+		murderer_card_indexes[i] = rng.randi_range(0,5)
