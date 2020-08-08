@@ -8,6 +8,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	GlobalVariables.current_stage = 0
 	$CanvasLayer2/Continue_Button.next_scene = GlobalVariables.suspects_path
 	pass # Replace with function body.
 
