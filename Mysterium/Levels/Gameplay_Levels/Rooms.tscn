@@ -1,5 +1,42 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Levels/Gameplay_Levels/Level_Gameplay.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Rooms_Resize.jpg" type="Texture" id=2]
 
 [node name="Level_Gameplay" instance=ExtResource( 1 )]
+
+[node name="BackgroundPicture" parent="CanvasLayer" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Card_0" parent="." index="2"]
+traitsArray = [ "Indoor", "No", "Expensive", "No", "Murder", "No" ]
+card_name = "Chapel"
+
+[node name="Card_1" parent="." index="3"]
+scale = Vector2( 1.00038, 1.11069 )
+traitsArray = [ "Indoor", "No", "Expensive", "Yes", "Murder", "Yes" ]
+card_name = "Grrenhouse"
+
+[node name="Card_2" parent="." index="4"]
+scale = Vector2( 0.997791, 0.99567 )
+traitsArray = [ "Outdoor", "No", "Affordable", "No", "Murder", "Yes" ]
+card_name = "Shed"
+
+[node name="Card_3" parent="." index="5"]
+scale = Vector2( 0.999205, 1 )
+traitsArray = [ "Indoor", "No", "Expensive", "Yes", "Murder", "No" ]
+card_name = "Bathroom"
+
+[node name="Card_4" parent="." index="6"]
+scale = Vector2( 1.00075, 1 )
+traitsArray = [ "Outdoor", "Yes", "Affordable", "No", "Murder", "Yes" ]
+card_name = "Porch"
+
+[node name="Card_5" parent="." index="7"]
+scale = Vector2( 1.00157, 0.890596 )
+traitsArray = [ "Indoor", "Yes", "Affordable", "No", "Murder", "No" ]
+card_name = "Toy Room"
+
+[node name="Card_Type_Information" parent="." index="8"]
+traits = [ "Indoor/Outdoor", "Chair", "Cost", "Aquatic", "Event", "Vegetation" ]
+card_type = "Room"

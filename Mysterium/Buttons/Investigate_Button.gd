@@ -50,6 +50,7 @@ func _on_Button_pressed():
 	elif (button_ID == GlobalVariables.murderer_card_indexes[GlobalVariables.current_stage]):
 		#Move To Next Scene
 		var err = get_tree().change_scene(success_path)
+		GlobalVariables.current_stage = (GlobalVariables.current_stage + 1 ) % 3
 		if (err == OK):
 			print_debug("Correct!")
 		else:
@@ -57,6 +58,7 @@ func _on_Button_pressed():
 	else:
 		#Move To Game Over 
 		var err = get_tree().change_scene(GlobalVariables.game_over_path)
+		GlobalVariables.current_stage = 0
 		if (err == OK):
 			print_debug("Game Over")
 		else:

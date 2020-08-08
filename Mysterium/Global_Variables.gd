@@ -4,7 +4,7 @@ extends Node
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var murderer_card_indexes = [4,0,0]
+var murderer_card_indexes = [4,2,0]
 var current_stage = 0
 
 
