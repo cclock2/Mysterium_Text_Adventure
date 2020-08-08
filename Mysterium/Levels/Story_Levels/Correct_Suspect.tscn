@@ -10,6 +10,6 @@ scale = Vector2( 0.997341, 1.02105 )
 texture = ExtResource( 2 )
 
 [node name="Level_Text" parent="CanvasLayer2" index="0"]
-rect_scale = Vector2( 0.997131, 0.924989 )
+rect_scale = Vector2( 0.996456, 0.924989 )
 text = "Despite the vague and barely coherent nature of the ghost's vision, you manage to correctly deduce the murderer's identity.
 However, that is not enough proof to convince the Scotland Yard to interrogate the culprit. You must supply more evidence: the room of the crime and the murderer's weapon."
