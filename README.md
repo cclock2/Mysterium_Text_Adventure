@@ -7,10 +7,12 @@ Instructions to View or Modify Code:
 3) Open Godot Editor, select Import, and navigate to Mysterium
 
 To Run Game:
-The root folder the project (Mysterium_Text_Adventure/Mysterium) includes a windows .exe file, a compressed MacOS file, and a Linux binary to run the game. 
+You do neet to download Godot to run the game if the following works:
+Mysterium_Text_Adventure/Mysterium/bin. This has a directory of opeatting systems (Windows, MacOS, Linux) each of which has an executable binary or compressed folder for the appropriate operating system.
 Uncompressing the appropriate file or running the appropriate binary *Should* run the game. (Note: This has only been tested for Windows Executable on a machine with Godot installed)
+Feel free to delete the folders in bin that not applicable to your operating system to save some disk space.
 
-If the binary does not run:
+If the binary does not run (Note: You must download Godot editor at this point):
 1) Follow instructions above to view or modify code
 2) In the Godot Editor, in the toolbar click project->export->add and then choose the target platform you are running on. It will create a playable binary.
 NOTE: Demo was developed and tested on Windows. It's reasonable to assume it works on most desktop environments, but it was not designed for mobile platforms
