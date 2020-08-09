@@ -7,9 +7,10 @@ Instructions to View or Modify Code:
 3) Open Godot Editor, select Import, and navigate to Mysterium
 
 To Run Game:
-A .exe binary is included root folder the project (Mysterium_Text_Adventure/Mysterium). If you are on Windows, running this executable *should* run the game
+The root folder the project (Mysterium_Text_Adventure/Mysterium) includes a windows .exe file, a compressed MacOS file, and a Linux binary to run the game. 
+Uncompressing the appropriate file or running the appropriate binary *Should* run the game. (Note: This has only been tested for Windows Executable on a machine with Godot installed)
 
-If the binary does not run or if you are not on windows:
+If the binary does not run:
 1) Follow instructions above to view or modify code
 2) In the Godot Editor, in the toolbar click project->export->add and then choose the target platform you are running on. It will create a playable binary.
 NOTE: Demo was developed and tested on Windows. It's reasonable to assume it works on most desktop environments, but it was not designed for mobile platforms
@@ -17,6 +18,7 @@ so it's unclear whether or not the game will play on Andoid/Iphone/etc. devices.
 
 How To Play:
 Follow the story via text, until you are prompted to make investigations.
+Note that some texts have scroll bars maning there is more text below.
 In each investigation level, you are trying to pick the correct 
 murderer, location, or weapon from 6 possible visual options.
 Click a button corresponding to an investigation and use the results to
@@ -25,4 +27,4 @@ The game randomly select a murderer, weapon, and location each time you play
 so the solution will change between playthroughs.
 
 Version 1.0: This is a roguh draft of the game. Mysterium Text Adventure is in a fully playable state, but some features like a title screen, transitions between levels,
-and background music are not present.
+clearer scroll bars, and background music are not present.
