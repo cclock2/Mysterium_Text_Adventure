@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/The_Count's_Manor.ogg-e3532eccfaf6e8f76c564156c40b54a4.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/The_Count's_Manor.ogg"
+dest_files=[ "res://.import/The_Count's_Manor.ogg-e3532eccfaf6e8f76c564156c40b54a4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

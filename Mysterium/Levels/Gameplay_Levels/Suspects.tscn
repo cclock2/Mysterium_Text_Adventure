@@ -6,6 +6,8 @@
 [node name="Level_Gameplay" instance=ExtResource( 1 )]
 
 [node name="BackgroundPicture" parent="CanvasLayer" index="0"]
+anchor_top = -0.0018037
+anchor_bottom = -0.0018037
 texture = ExtResource( 2 )
 
 [node name="Level_Text" parent="CanvasLayer2" index="0"]
