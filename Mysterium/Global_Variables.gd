@@ -24,9 +24,11 @@ var game_over_path = 	"res://Levels/Story_Levels/Game_Over.tscn"
 var success_path_array = ["res://Levels/Story_Levels/Correct_Suspect.tscn","res://Levels/Story_Levels/Correct_Room.tscn","res://Levels/Story_Levels/Finale.tscn"]
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	music_node.pause_mode = Node.PAUSE_MODE_PROCESS
 	var stream = load("res://Assets/Music/The_Count's_Manor.ogg")
 	music_node.set_stream(stream)
 	get_tree().get_root().call_deferred("add_child",music_node)
+	music_node.play()
 	music_node.play()
 	
 	pass # Replace with function body.

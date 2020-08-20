@@ -17,6 +17,5 @@ func _ready():
 
 
 func _on_Continue_Button_pressed():
-	var err = get_tree().change_scene(next_scene)
-	if err != OK:
-		print_debug("Could not load scene")
+	SceneChanger.transition_scene(next_scene)
+

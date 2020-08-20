@@ -22,6 +22,7 @@ config/icon="res://icon.png"
 [autoload]
 
 GlobalVariables="*res://Global_Variables.gd"
+SceneChanger="*res://Scene_Changer/Scene_Changer.tscn"
 
 [display]
 

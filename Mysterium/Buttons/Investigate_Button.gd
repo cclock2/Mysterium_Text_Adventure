@@ -49,17 +49,12 @@ func _on_Button_pressed():
 		gameplay_node._investigateTrait(button_ID)
 	elif (button_ID == GlobalVariables.murderer_card_indexes[GlobalVariables.current_stage]):
 		#Move To Next Scene
-		var err = get_tree().change_scene(success_path)
+		SceneChanger.transition_scene(success_path)
 		GlobalVariables.current_stage = (GlobalVariables.current_stage + 1 ) % 3
-		if (err == OK):
-			print_debug("Correct!")
-		else:
-			print_debug("Correct Scene failed to load")
+		print_debug("Correct!")
 	else:
 		#Move To Game Over 
-		var err = get_tree().change_scene(GlobalVariables.game_over_path)
+		SceneChanger.transition_scene(GlobalVariables.game_over_path)
 		GlobalVariables.current_stage = 0
-		if (err == OK):
-			print_debug("Game Over")
-		else:
-			print_debug("Game_Over Scene failed to load")
+		print_debug("Game Over")
+		
