@@ -23,6 +23,7 @@ config/icon="res://icon.png"
 
 GlobalVariables="*res://Global_Variables.gd"
 SceneChanger="*res://Scene_Changer/Scene_Changer.tscn"
+AudioPlayers="*res://AudioPlayers.gd"
 
 [display]
 
