@@ -49,11 +49,13 @@ func _on_Button_pressed():
 		gameplay_node._investigateTrait(button_ID)
 	elif (button_ID == GlobalVariables.murderer_card_indexes[GlobalVariables.current_stage]):
 		#Move To Next Scene
+		GlobalVariables.chime_node.play()
 		SceneChanger.transition_scene(success_path)
 		GlobalVariables.current_stage = (GlobalVariables.current_stage + 1 ) % 3
 		print_debug("Correct!")
 	else:
 		#Move To Game Over 
+		GlobalVariables.thunder_node.play()
 		SceneChanger.transition_scene(GlobalVariables.game_over_path)
 		GlobalVariables.current_stage = 0
 		print_debug("Game Over")
