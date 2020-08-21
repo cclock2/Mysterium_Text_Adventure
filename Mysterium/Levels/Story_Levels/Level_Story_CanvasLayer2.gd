@@ -10,8 +10,9 @@ func _ready():
 func _dialogue( string ):
 	for letter in string:
 		$Timer.start()
-		$Level_Text.add_text( letter )
 		yield($Timer, "timeout")
+		$Level_Text.add_text( letter )
+		#yield($Timer, "timeout")
 
 
 func _on_Speedup_Text_Button_pressed():
