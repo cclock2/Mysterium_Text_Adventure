@@ -7,7 +7,7 @@ extends Node
 var murderer_card_indexes = [4,2,0]
 var current_stage = 0
 var rng = RandomNumberGenerator.new()
-var typewriter_text_mode = false
+var typewriter_text_mode = true
 
 #node paths
 var level_gameplay_path = "/root/Level_Gameplay"
