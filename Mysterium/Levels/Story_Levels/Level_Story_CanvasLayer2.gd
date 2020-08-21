@@ -12,3 +12,10 @@ func _dialogue( string ):
 		$Timer.start()
 		$Level_Text.add_text( letter )
 		yield($Timer, "timeout")
+
+
+func _on_Speedup_Text_Button_pressed():
+	$Timer.wait_time = .001
+	$Speedup_Text_Button.hide()
+	print_debug("Button_Pressed")
+	pass # Replace with function body.

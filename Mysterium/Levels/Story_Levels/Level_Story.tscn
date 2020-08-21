@@ -17,3 +17,13 @@ margin_bottom = 700.0
 
 [node name="Timer" type="Timer" parent="CanvasLayer2" index="2"]
 wait_time = 0.05
+
+[node name="Speedup_Text_Button" type="Button" parent="CanvasLayer2" index="3"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 720.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="CanvasLayer2/Speedup_Text_Button" to="CanvasLayer2" method="_on_Speedup_Text_Button_pressed"]
