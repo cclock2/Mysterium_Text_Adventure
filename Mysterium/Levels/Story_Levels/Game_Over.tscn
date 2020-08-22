@@ -16,6 +16,7 @@ text = "You have misinterpreted the ghost's vision and now it is doomed to float
 For the rest of eternity, the ghost will question whether it was not clear enough or if the psychic it trusted was actually a charlatan.
 
 "
+scroll_following = false
 
 [node name="Continue_Button" parent="CanvasLayer2" index="1"]
 text = "Restart"

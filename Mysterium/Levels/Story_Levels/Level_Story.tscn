@@ -9,6 +9,9 @@
 [node name="CanvasLayer2" parent="." index="1"]
 script = ExtResource( 4 )
 
+[node name="Level_Text" parent="CanvasLayer2" index="0"]
+scroll_following = true
+
 [node name="Continue_Button" parent="CanvasLayer2" index="1" instance=ExtResource( 2 )]
 margin_left = 1700.0
 margin_top = 660.0
