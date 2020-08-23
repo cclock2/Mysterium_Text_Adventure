@@ -1,3 +1,178 @@
-[gd_scene format=2]
+[gd_scene load_steps=11 format=2]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource path="res://Assets/Title_Image.jpg" type="Texture" id=1]
+[ext_resource path="res://Assets/Fonts/AlbertText-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Exit_Button.gd" type="Script" id=3]
+[ext_resource path="res://NewGame_Button.gd" type="Script" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 2 )
+
+[node name="Title_Screen" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+margin_left = 2.27209
+margin_top = -3.89911
+margin_right = 1920.0
+margin_bottom = 1078.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="MarginContainer"]
+layer = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/CanvasLayer2"]
+margin_left = -6.10352e-05
+margin_top = 459.098
+margin_right = 1920.0
+margin_bottom = 1079.1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="MarginContainer/CanvasLayer2/CenterContainer"]
+margin_left = 960.0
+margin_top = 310.0
+margin_right = 960.0
+margin_bottom = 310.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/CanvasLayer2/CenterContainer/Panel"]
+modulate = Color( 0.0823529, 0.662745, 0.662745, 0.439216 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -150.0
+margin_top = -90.0
+margin_right = 150.0
+margin_bottom = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/CanvasLayer2/CenterContainer/Panel/ColorRect"]
+margin_right = 300.0
+margin_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/CanvasLayer2/CenterContainer/Panel/ColorRect/VBoxContainer"]
+margin_top = 34.0
+margin_right = 300.0
+margin_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NewGame_Button" type="Button" parent="MarginContainer/CanvasLayer2/CenterContainer/Panel/ColorRect/VBoxContainer/CenterContainer"]
+margin_left = 67.0
+margin_right = 232.0
+margin_bottom = 54.0
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/disabled = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.866667, 0.054902, 0.286275, 1 )
+text = "New Game"
+script = ExtResource( 4 )
+
+[node name="CenterContainer2" type="CenterContainer" parent="MarginContainer/CanvasLayer2/CenterContainer/Panel/ColorRect/VBoxContainer"]
+margin_top = 92.0
+margin_right = 300.0
+margin_bottom = 146.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit_Button" type="Button" parent="MarginContainer/CanvasLayer2/CenterContainer/Panel/ColorRect/VBoxContainer/CenterContainer2"]
+margin_left = 119.0
+margin_right = 180.0
+margin_bottom = 54.0
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/disabled = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.866667, 0.054902, 0.286275, 1 )
+text = "Exit"
+script = ExtResource( 3 )
+
+[node name="Top Bar" type="ColorRect" parent="MarginContainer/CanvasLayer2/CenterContainer/Panel"]
+margin_left = -160.0
+margin_top = -100.0
+margin_right = 160.0
+margin_bottom = -90.0
+color = Color( 0.721569, 0.741176, 0.0823529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bottom Bar" type="ColorRect" parent="MarginContainer/CanvasLayer2/CenterContainer/Panel"]
+margin_left = -160.0
+margin_top = 90.0
+margin_right = 160.0
+margin_bottom = 100.0
+color = Color( 0.721569, 0.741176, 0.0823529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Left Bar" type="ColorRect" parent="MarginContainer/CanvasLayer2/CenterContainer/Panel"]
+margin_left = -160.0
+margin_top = -90.0
+margin_right = -150.0
+margin_bottom = 90.0
+color = Color( 0.721569, 0.741176, 0.0823529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Right Bar" type="ColorRect" parent="MarginContainer/CanvasLayer2/CenterContainer/Panel"]
+margin_left = 150.0
+margin_top = -90.0
+margin_right = 160.0
+margin_bottom = 90.0
+color = Color( 0.721569, 0.741176, 0.0823529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="MarginContainer/CanvasLayer2/CenterContainer/Panel/ColorRect/VBoxContainer/CenterContainer/NewGame_Button" to="MarginContainer/CanvasLayer2/CenterContainer/Panel/ColorRect/VBoxContainer/CenterContainer/NewGame_Button" method="_on_NewGame_Button_pressed"]
+[connection signal="pressed" from="MarginContainer/CanvasLayer2/CenterContainer/Panel/ColorRect/VBoxContainer/CenterContainer2/Exit_Button" to="MarginContainer/CanvasLayer2/CenterContainer/Panel/ColorRect/VBoxContainer/CenterContainer2/Exit_Button" method="_on_Exit_Button_pressed"]

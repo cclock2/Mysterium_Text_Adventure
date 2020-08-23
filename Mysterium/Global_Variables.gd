@@ -17,6 +17,7 @@ var suspects_path = 	"res://Levels/Gameplay_Levels/Suspects.tscn"
 var rooms_path = 		"res://Levels/Gameplay_Levels/Rooms.tscn"
 var weapons_path = 		"res://Levels/Gameplay_Levels/Weapons.tscn"
 
+var title_path = 		"res://Title.tscn"
 var introduction_path = "res://Levels/Story_Levels/Introduction.tscn"
 var game_over_path = 	"res://Levels/Story_Levels/Game_Over.tscn"
 
