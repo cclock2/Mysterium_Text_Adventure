@@ -1,4 +1,4 @@
-extends Button
+extends Node2D
 
 
 # Declare member variables here. Examples:
@@ -8,14 +8,11 @@ extends Button
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	AudioPlayers.music_node.stop()
+	AudioPlayers.wind_node.play()
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-func _on_NewGame_Button_pressed():
-	SceneChanger.transition_scene(GlobalVariables.introduction_path)# Replace with function body.
-	AudioPlayers.wind_node.stop()

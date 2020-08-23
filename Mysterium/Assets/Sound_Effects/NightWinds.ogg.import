@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/NightWinds.ogg-7bd5da18eef9556e27d5e528d081b0e3.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sound_Effects/NightWinds.ogg"
+dest_files=[ "res://.import/NightWinds.ogg-7bd5da18eef9556e27d5e528d081b0e3.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0.5
